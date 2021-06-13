@@ -49,11 +49,17 @@
             android:measureAllChildren="false"
             android:saveEnabled="false" />
 
-        <TextView
-            android:id="@+id/noteload_veiw"
+        <EditText
+            android:id="@+id/main_noteviewer"
+            style="null"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:gravity="top|left"
+            android:hint="메모 확인 공간 입니다."
+            android:inputType="textMultiLine"
+            android:scrollbars="none"
+            android:textAllCaps="false" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
