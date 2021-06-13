@@ -7,23 +7,21 @@ import androidx.room.Query;
 
 import java.util.List;
 
-public class WordDao {
-    @Dao
-    public interface UserDao {
-        @Query("SELECT * FROM word")
-        List<Word.word> getAll();
+@Dao
+public interface WordDao {
+    @Query("SELECT * FROM word")
+    List<Word> getAll();
 
-        @Query("SELECT * FROM word WHERE wid IN (:wordIds)")
-        List<Word> loadAllByIds(int[] wordIds);
+    @Query("SELECT * FROM word WHERE wid IN (:wordIds)")
+    List<Word> loadAllByIds(int[] wordIds);
 
-        @Query("SELECT * FROM word WHERE note_title LIKE :first AND " +
-                "main_note LIKE :last LIMIT 1")
-        Word findByName(String first, String last);
+    @Query("SELECT * FROM word WHERE note_title LIKE :first AND " +
+            "main_note LIKE :last LIMIT 1")
+    Word findByName(String first, String last);
 
-        @Insert
-        void insertAll(Word... words);
+    @Insert
+    void insertAll(Word... words);
 
-        @Delete
-        void delete(Word word);
-    }
+    @Delete
+    void delete(Word word);
 }

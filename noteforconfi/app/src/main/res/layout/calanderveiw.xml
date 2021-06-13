@@ -30,6 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="gotoMainView"
                 android:text="메모장" />
 
             <Button
@@ -37,6 +38,7 @@
                 android:layout_width="1dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="openSettings"
                 android:text="..." />
         </LinearLayout>
 

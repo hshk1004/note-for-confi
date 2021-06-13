@@ -17,7 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".calanderveiw" />
+        <activity android:name=".Settingsview" />
     </application>
-    <activity android:name=".setting_view"
-        tools:ignore="MissingClass" />
 </manifest>

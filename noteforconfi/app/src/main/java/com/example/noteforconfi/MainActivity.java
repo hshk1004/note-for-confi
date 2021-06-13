@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,12 +24,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gotoCalanderview(View view){
-        Intent intent = new Intent(this, calanderveiw.class);
+        Intent intent = new Intent(getApplicationContext(), calanderveiw.class);
         startActivity(intent);
+
     }
 
     public void openSettings(View view){
-        Intent intent = new Intent(this, Settingsview.class);
+        Intent intent = new Intent(getApplicationContext(), Settingsview.class);
         startActivity(intent);
     }
 }

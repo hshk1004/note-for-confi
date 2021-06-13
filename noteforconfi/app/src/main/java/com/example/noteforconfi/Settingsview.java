@@ -36,4 +36,17 @@ public class Settingsview extends AppCompatActivity {
             textView.setTextColor(999999);
         }
     }
+
+    public void setTextSize(View view){
+        if(button == (Button)findViewById(R.id.smalltext)){
+            textView = (TextView)findViewById(R.id.main_noteview);
+            textView.setTextSize(10);
+        }else if(button == (Button)findViewById(R.id.midletext)){
+            textView = (TextView)findViewById(R.id.main_noteview);
+            textView.setTextSize(14);
+        }else if(button == (Button)findViewById(R.id.largetext)){
+            textView = (TextView)findViewById(R.id.main_noteview);
+            textView.setTextSize(20);
+        }
+    }
 }
